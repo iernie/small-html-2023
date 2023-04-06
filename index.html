@@ -1,0 +1,241 @@
+<pre id="a"></pre>
+
+<style>
+:root {
+  --o: rgb(255, 166, 0);
+  --b: rgb(0, 0, 255);
+}
+pre {
+  padding-top: 500px;
+  text-align: center;
+}
+i {
+  position: relative;
+  display: block;
+  animation: 10s ease infinite;
+}
+
+i:nth-child(7) {
+  animation-name: b;
+}
+i:nth-child(15) {
+  animation-name: c;
+}
+i:nth-child(26) {
+  animation-name: d;
+}
+i:nth-child(30) {
+  animation-name: e;
+}
+b {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: a 15000ms infinite;
+}
+b:nth-child(2n):after {
+  content: "TG!";
+}
+
+b:nth-child(4), b:nth-child(13) {animation-timing-function: linear;}
+
+b:nth-child(5), b:nth-child(11) {animation-timing-function: ease ;}
+
+b:nth-child(6), b:nth-child(12) {animation-timing-function: ease-in ;}
+
+b:nth-child(7), b:nth-child(9) {animation-timing-function: ease-out ;}
+
+b:nth-child(8), b:nth-child(10) {animation-timing-function: ease-in-out ;}
+
+
+@keyframes a {
+  0%   {background-color:  var(--o)
+; left:300px; top:-950px;}
+
+  25%  {background-color:var(--b)
+; left:900px; top:-950px;}
+
+  50%  {background-color:var(--o)
+; left:900px; top:0;}
+
+  75%  {background-color:var(--b)
+; left:300px; top:0;}
+
+  100% {background-color:var(--o)
+; left:300px; top:-950px;}
+
+}
+@keyframes b {
+  0%   {   
+; left:380px; top:0;}
+
+  25%  {
+; left:800px; top:0;}
+
+  50%  {
+; left:-150px; top:0;}
+
+  75%  {
+; left:400px; top:0;}
+
+  100% {
+; left:380px; top:0;}
+
+}
+
+@keyframes c {
+  0%   {   
+; left:395px; top:0;}
+
+  25%  {
+; left:1000px; top:0;}
+
+  50%  {
+; left:-400px; top:0;}
+
+  75%  {
+; left:1000px; top:0;}
+
+  100% {
+; left:395px; top:0;}
+
+}
+
+@keyframes d {
+  0%   {   
+; left:380px; top:0;}
+
+  25%  {
+; left:-250px; top:0;}
+
+  50%  {
+; left:700px; top:0;}
+
+  75%  {
+; left:430px; top:0;}
+
+  100% {
+; left:380px; top:0;}
+
+}
+
+@keyframes e {
+  0%   {   
+; left:359px; top:0;}
+
+  25%  {
+; left:-359px; top:0;}
+
+  50%  {
+; left:1500px; top:0;}
+
+  75%  {
+; left:-100px; top:0;}
+
+  100% {
+; left:359px; top:0;}
+
+}
+</style>
+<script>
+  const logo = `                        ████████  ▄███████████████████████████
+                       ████████  ▄████████████████████████████
+                      ████████  ▄█████████████████████████████
+                     ████████  ▄██████                        
+                    ████████  ▄██████   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                   ████████  ▄██████   ███████████████████████
+                  ████████  ▄██████   ████████████████████████
+                 ████████  ▄██████   ███████           ███████
+                ████████  ▄██████   ███████            ███████
+               ████████  ▄██████   ███████             ███████
+              ████████  ▄██████   ███████              ███████
+             ████████  ▄██████▄  ▀████████▄            ███████
+            ████████▄  ▀████████▄  ▀████████▄          ███████
+           ███████████▄  ▀████████▄  ▀████████▄        ███████
+          ██████████████▄  ▀████████▄  ▀████████▄      ███████
+         █████████████████▄  ▀████████▄  ▀███████      ███████
+        ███████▀  ▀█████████▄  ▀████████▄  ▀█████      ███████
+       ███████▀     ▀█████████▄  ▀████████▄  ▀███      ███████
+      ███████▀        ▀█████████▄  ▀████████▄  ▀█      ███████
+     ███████▀           ▀█████████▄  ▀████████▄        ███████
+    ███████▀  ▄▄▄ ▄ ▄ ▄▄  ▀█████████▄  ▀████████▄      ███████
+   ███████▀    █  █ █ █     ▀█████████▄  ▀████████▄    ███████
+  ███████▀     █  █▄█ █▄      ▀█████████▄  ▀██████████████████
+ ███████▀      █  █ █ █         ▀█████████▄  ▀████████████████
+███████▀       █  █ █ █▄          ▀█████████▄  ▀██████████████
+
+▄████▄ ▄████▄ ██████ ██  ██ ██████ ▄█████▄  ▐██  ██  ██ ▄████▄
+██  ██ ██  ██   ██   ██  ██ ██     ██   ▀█▌ ▐██  ██▌ ██ ██  ██
+██     ██  ██   ██   ██  ██ ██     ██   ▄█▌ ▐██  ███ ██ ██    
+██ ▄▄▄ ██▄▄██   ██   ██▄▄██ ██▄▄▄▄ ██████▀  ▐██  ███▌██ ██ ▄▄▄
+██ ▀██ ██▀▀██   ██   ██▀▀██ ██▀▀▀▀ ██  ▐█▌  ▐██  ██▐███ ██ ▀██
+██  ██ ██  ██   ██   ██  ██ ██     ██   ██  ▐██  ██ ███ ██  ██
+▀█████ ██  ██   ██   ██  ██ ██████ ██   ▐█▌ ▐██  ██ ▐██ ▀█████`
+
+let arr = [];
+for(var i = 0; i < logo.length; i++) {
+  switch(logo[i]) {
+    case "█": arr.push("a"); break;
+    case "▐": arr.push("b"); break;
+    case "▌": arr.push("c"); break;
+    case "▀": arr.push("d"); break;
+    case "▄": arr.push("e"); break;
+    case "\n": arr.push("f"); break;
+    case " ": arr.push("g"); break;
+  }
+}
+
+let arr2 = arr.reduce((acc, curr) => {
+  if (acc.length > 0 && acc[acc.length - 1][0] === curr) {
+    return [...acc.slice(0, acc.length - 1), [acc[acc.length - 1][0], acc[acc.length - 1][1] + 1]];
+  }
+  return [...acc, [curr, 1]];
+}, [])
+
+const arr3 = arr2.reduce((acc, curr) => acc + curr[0] + curr[1], "");
+
+console.log(arr3);
+
+var getChar = (prim) => {
+  switch(prim) {
+    case "a": return "█";
+    case "b": return "▐";
+    case "c": return "▌";
+    case "d": return "▀";
+    case "e": return "▄";
+    case "f": return "\n";
+    case "g": return " ";
+  }
+}
+const compress = "g24a8g2e1a27f1g23a8g2e1a28f1g22a8g2e1a29f1g21a8g2e1a6g24f1g20a8g2e1a6g3e22f1g19a8g2e1a6g3a23f1g18a8g2e1a6g3a24f1g17a8g2e1a6g3a7g11a7f1g16a8g2e1a6g3a7g12a7f1g15a8g2e1a6g3a7g13a7f1g14a8g2e1a6g3a7g14a7f1g13a8g2e1a6e1g2d1a8e1g12a7f1g12a8e1g2d1a8e1g2d1a8e1g10a7f1g11a11e1g2d1a8e1g2d1a8e1g8a7f1g10a14e1g2d1a8e1g2d1a8e1g6a7f1g9a17e1g2d1a8e1g2d1a7g6a7f1g8a7d1g2d1a9e1g2d1a8e1g2d1a5g6a7f1g7a7d1g5d1a9e1g2d1a8e1g2d1a3g6a7f1g6a7d1g8d1a9e1g2d1a8e1g2d1a1g6a7f1g5a7d1g11d1a9e1g2d1a8e1g8a7f1g4a7d1g2e3g1e1g1e1g1e2g2d1a9e1g2d1a8e1g6a7f1g3a7d1g4a1g2a1g1a1g1a1g5d1a9e1g2d1a8e1g4a7f1g2a7d1g5a1g2a1e1a1g1a1e1g6d1a9e1g2d1a18f1g1a7d1g6a1g2a1g1a1g1a1g9d1a9e1g2d1a16f1a7d1g7a1g2a1g1a1g1a1e1g10d1a9e1g2d1a14f2e1a4e1g1e1a4e1g1a6g1a2g2a2g1a6g1e1a5e1g2b1a2g2a2g2a2g1e1a4e1f1a2g2a2g1a2g2a2g3a2g3a2g2a2g1a2g5a2g3d1a1c1g1b1a2g2a2c1g1a2g1a2g2a2f1a2g5a2g2a2g3a2g3a2g2a2g1a2g5a2g3e1a1c1g1b1a2g2a3g1a2g1a2g4f1a2g1e3g1a2e2a2g3a2g3a2e2a2g1a2e4g1a6d1g2b1a2g2a3c1a2g1a2g1e3f1a2g1d1a2g1a2d2a2g3a2g3a2d2a2g1a2d4g1a2g2b1a1c1g2b1a2g2a2b1a3g1a2g1d1a2f1a2g2a2g1a2g2a2g3a2g3a2g2a2g1a2g5a2g3a2g2b1a2g2a2g1a3g1a2g2a2f1d1a5g1a2g2a2g3a2g3a2g2a2g1a6g1a2g3b1a1c1g1b1a2g2a2g1b1a2g1d1a5";
+const d = document.getElementById("a");
+compress.split("f1").forEach(l => {
+  let line = "<i>";
+  l.match(/.\d+/g).map(g => {
+    [...Array(+g.slice(1))].map(q => {
+      line += getChar(g[0]);
+    });
+  })
+  d.innerHTML += line + "</i>";
+});
+
+
+
+// arr2.forEach(c => {
+//   if (c[0] === 13) {
+//     line += "</i>"
+//     d.innerHTML += line;
+//     line = "<i>";
+//   } else {
+//     for(var j = 0; j < c[1]; j++) {
+//       line += getChar(c[0]);
+//     }
+//   }
+// });
+
+[...Array(10)].forEach(x => {
+  document.body.innerHTML += `<b/>`;
+});
+
+</script>
