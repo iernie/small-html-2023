@@ -4,10 +4,6 @@ i,b {
   display: block;
   position: relative;
 }
-:root {
-  --o:#ffa600;
-  --b:#00f
-}
 pre {
   padding-top: 515;
   text-align: center;
@@ -15,16 +11,16 @@ pre {
 i {
   animation: 10s ease infinite;
 }
-i:nth-child(9) {
+#b6 {
   animation-name: b;
 }
-i:nth-child(17) {
+#b14 {
   animation-name: c;
 }
-i:nth-child(30) {
+#b27 {
   animation-name: d;
 }
-i:nth-child(34) {
+#b31 {
   animation-name: e;
 }
 b {
@@ -32,16 +28,16 @@ b {
   height: 50;
   animation: linear a 15s infinite;
 }
-b:nth-child(3), b:nth-child(9) {animation: ease a 15s infinite;}
-b:nth-child(4), b:nth-child(10) {animation: ease-in a 15s infinite;}
-b:nth-child(5), b:nth-child(7) {animation: ease-out a 15s infinite;}
-b:nth-child(6), b:nth-child(8) {animation: ease-in-out a 15s infinite;}
+#a1, #a8 {animation: ease a 15s infinite;}
+#a2, #a7 {animation: ease-in a 15s infinite;}
+#a3, #a5 {animation: ease-out a 15s infinite;}
+#a4, #a6 {animation: ease-in-out a 15s infinite;}
 @keyframes a {
-0%{background:var(--o);left:300;top:-1020}
-25%{background:var(--b);left:900;top:-1020}
-50%{background:var(--o);left:900;top:0}
-75%{background:var(--b);left:300;top:0}
-to{background:var(--o);left:300;top:-1020}
+0%{background:#ffa600;left:300;top:-1020}
+25%{background:#00f;left:900;top:-1020}
+50%{background:#ffa600;left:900;top:0}
+75%{background:#00f;left:300;top:0}
+to{background:#ffa600;left:300;top:-1020}
 }
 @keyframes b {
 0%{left:-250}
@@ -76,9 +72,9 @@ to{left:-200}
 a = Array
 d = document
 "g24i8g2e1i27fg23i8g2e1i28fg22i8g2e1i29fg21i8g2e1i6g24fg20i8g2e1i6g3e22fg19i8g2e1i6g3i23fg18i8g2e1i6g3i24fg17i8g2e1i6g3i7g11i7fg16i8g2e1i6g3i7g12i7fg15i8g2e1i6g3i7g13i7fg14i8g2e1i6g3i7g14i7fg13i8g2e1i6e1g2a1i8e1g12i7fg12i8e1g2a1i8e1g2a1i8e1g10i7fg11i11e1g2a1i8e1g2a1i8e1g8i7fg10i14e1g2a1i8e1g2a1i8e1g6i7fg9i17e1g2a1i8e1g2a1i7g6i7fg8i7a1g2a1i9e1g2a1i8e1g2a1i5g6i7fg7i7a1g5a1i9e1g2a1i8e1g2a1i3g6i7fg6i7a1g8a1i9e1g2a1i8e1g2a1i1g6i7fg5i7a1g11a1i9e1g2a1i8e1g8i7fg4i7a1g2e3g1e1g1e1g1e2g2a1i9e1g2a1i8e1g6i7fg3i7a1g4i1g2i1g1i1g1i1g5a1i9e1g2a1i8e1g4i7fg2i7a1g5i1g2i1e1i1g1i1e1g6a1i9e1g2a1i18fg1i7a1g6i1g2i1g1i1g1i1g9a1i9e1g2a1i16fi7a1g7i1g2i1g1i1g1i1e1g10a1i9e1g2a1i14fg1fe1i4e1g1e1i4e1g1i6g1i2g2i2g1i6g1e1i5e1g2q1i2g2i2g2i2g1e1i4e1fi2g2i2g1i2g2i2g3i2g3i2g2i2g1i2g5i2g3a1i1m1g1q1i2g2i2m1g1i2g1i2g2i2fi2g5i2g2i2g3i2g3i2g2i2g1i2g5i2g3e1i1m1g1q1i2g2i3g1i2g1i2g4fi2g1e3g1i2e2i2g3i2g3i2e2i2g1i2e4g1i6a1g2q1i2g2i3m1i2g1i2g1e3fi2g1a1i2g1i2a2i2g3i2g3i2a2i2g1i2a4g1i2g2q1i1m1g2q1i2g2i2q1i3g1i2g1a1i2fi2g2i2g1i2g2i2g3i2g3i2g2i2g1i2g5i2g3i2g2q1i2g2i2g1i3g1i2g2i2fa1i5g1i2g2i2g3i2g3i2g2i2g1i6g1i2g3q1i1m1g1q1i2g2i2g1q1i2g1a1i5".split("f").map((l, i) => {
-  line = "<i>      "
+  line = `<i id="b${i}">      `
   l.match(/.\d+/g).map(g => [...a(+g.slice(1))].map(q => line += g[0] == "g" ? " " : String.fromCharCode(g[0].charCodeAt(0) + 9503)))
   d.getElementById("a").innerHTML += `${line}</i>`
-  if (i < 10) d.body.innerHTML += `<b>${i % 2 ? "" : "TG!"}</b>`
+  if (i < 10) d.body.innerHTML += `<b id="a${i}">${i % 2 ? "" : "TG!"}</b>`
 })
 </script>
